@@ -1,0 +1,8 @@
+Keep this in mind.
+
+I used Blender when working with this model. Now, you should be just fine when working with any other editor. BUT,
+if you are going to edit this model in ANY VERSION OF GOOGLE SKETCHUP, YOU MUST RUN THIS THROUGH ANOTHER MODEL
+EDITING PROGRAM FIRST! THIS ALSO GOES FOR ANY OTHER OoT3D OR MM3D MODELS! ITS SOMETHING WITH THE WAY GREZZO DID
+THE TEXTURE MAPPING.
+
+ALSO, THIS MODEL'S TEXTURES ARE VIEWED IN MATERIAL MODE IN BLENDER. :)

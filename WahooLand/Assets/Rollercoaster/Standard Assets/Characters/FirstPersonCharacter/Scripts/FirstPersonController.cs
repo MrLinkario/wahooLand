@@ -55,6 +55,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public float tiempoDisparo;
         private int permisoDisp;
 
+        //Martillo
+        //public GameObject hammer;
+
+        ///public int actHammer=0;
+
         //puntaje
         public int puntaje;
 
@@ -243,6 +248,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             m_WalkSpeed = 3;
             m_IsWalking = true;
+            permisoDisp = 0;
+        }
+
+        public void startTopos()
+        {
             permisoDisp = 0;
         }
 

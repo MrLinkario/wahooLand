@@ -32,6 +32,11 @@ public class switchStop : MonoBehaviour
 
     public void reinicio()
     {
+        SceneManager.LoadScene(1);
+    }
+
+    public void salirDeAqui()
+    {
         SceneManager.LoadScene(0);
     }
 }

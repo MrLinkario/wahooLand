@@ -12,6 +12,9 @@ TagManager:
   - Fire
   - final
   - boo
+  - martillo
+  - golpe
+  - salmon
   layers:
   - Default
   - TransparentFX

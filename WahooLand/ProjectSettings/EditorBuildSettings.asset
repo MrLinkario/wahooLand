@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: be6cf56429522ef479988efc78ff9770
+  - enabled: 1
     path: Assets/Scenes/RollerCoaster.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Mansion.unity
     guid: 31ddc1f11e2851c498367774b5151984
+  - enabled: 1
+    path: Assets/Scenes/Salmon.unity
+    guid: af5de42a768ae604dad1936de59e00b6
   m_configObjects: {}

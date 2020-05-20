@@ -4,37 +4,60 @@ using UnityEngine;
 
 public class enemyGeneratorController : MonoBehaviour
 {
-    public Transform jugador;
     public GameObject enemigo;
     private GameObject hijo;
     public Transform zonaGen;
-    int empezar;
-    int cantidad;
+    public GameObject patron;
+
+    public float timeRespawn;
+    public float time;
+    int f;
+
+    public int empezar;
+    public int cantidad;
     // Start is called before the first frame update
     void Start()
     {
-        empezar = 0;
-        cantidad = 0;
+        //empezar = 0;
+        //cantidad = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         //empezar = jugador.GetComponent<FirstPersonController>().m_WalkSpeed;
-        if (cantidad == 0)
-        {
-           hijo= Instantiate(enemigo, zonaGen.position, zonaGen.rotation);
-            //hijo.GetComponent<calamardo>().objetivo = jugador;
-            cantidad = 1;
+        if (empezar == 1) { 
+            if (cantidad == 0)
+            {
+                if (time > 0)
+                {
+                    time -= Time.deltaTime;
+                }
+                else
+                {
+                    hijo = Instantiate(enemigo, zonaGen.position, zonaGen.rotation);
+                    hijo.GetComponent<salmonsitoScript>().gameManager = patron;
+                    //hijo.GetComponent<calamardo>().objetivo = jugador;
+                    cantidad = 1;
+                    f = 0;
+                }
 
-        }
+            }
 
 
 
 
         if (!hijo)
         {
-            cantidad = 0;
+
+            if (f== 0)
+            {
+                cantidad = 0;
+                time = timeRespawn;
+                    f = 1;
+            }
+
         }
+    }
     }
 }
